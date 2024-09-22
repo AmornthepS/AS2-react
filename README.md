@@ -38,12 +38,12 @@ CMD ["nginx", "-g", "daemon off;"]
 กลับมาที่โปรแกรม VSCODE สร้าง Docker image ชื่อ arrukex/ct648_bun_react_docker:react-app จาก Dockerfile ในไดเรกทอรีปัจจุบัน และ push image ขึ้นไปยัง Docker Hub ด้วยคำสั่ง
 
 ```
-docker push arrukex/ct648_bun_react_docker:react-app
+docker push amorntheps/as2-react
 ```
 
 ทดสอบ run ด้วยคำสั่ง
 ```
-docker run -d -p 3009:80 arrukex/ct648_bun_react_docker:react-app
+docker run -d -p 3002:80 amorntheps/as2-react
 ```
 
 ขั้นตอนการดำเนิน Deploy
@@ -57,12 +57,12 @@ install docker
 sudo apt install docker.io
 ```
 
-ดึง Docker image ที่ชื่อ arrukex/ct648_bun_react_docker:react-app จาก Docker Hub ที่สร้างและ push ขึ้นไปไว้ก่อนหน้านี้มายังเครื่อง instance EC2 ของเรา ด้วยคำสั่งนี้
+ดึง Docker image ที่ชื่อ amorntheps/as2-react จาก Docker Hub ที่สร้างและ push ขึ้นไปไว้ก่อนหน้านี้มายังเครื่อง instance EC2 ของเรา ด้วยคำสั่งนี้
 ```
-sudo docker pull arrukex/ct648_bun_react_docker:react-app
+sudo docker pull amorntheps/as2-react
 ```
 ทดสอบ run ด้วยคำสั่ง
 ```
-docker run -d -p 3009:80 arrukex/ct648_bun_react_docker:react-app
+docker run -d -p 3002:80 amorntheps/as2-react
 ```
 เมื่อ run ผ่านและไม่มี error ก็เข้าไปดูหน้า web ด้วย Public IP ของเครื่อง instance EC2
