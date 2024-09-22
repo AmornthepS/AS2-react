@@ -34,7 +34,7 @@ EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
-ไปสร้าง repository ชื่อ arrukex/ct648_bun_react_docker ไว้ที่ Docker Hub https://hub.docker.com/
+ไปสร้าง repository ชื่อ amorntheps/as2-react ไว้ที่ Docker Hub https://hub.docker.com/
 กลับมาที่โปรแกรม VSCODE สร้าง Docker image ชื่อ arrukex/ct648_bun_react_docker:react-app จาก Dockerfile ในไดเรกทอรีปัจจุบัน และ push image ขึ้นไปยัง Docker Hub ด้วยคำสั่ง
 
 ```
