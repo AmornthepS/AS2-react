@@ -35,7 +35,7 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 
 ไปสร้าง repository ชื่อ amorntheps/as2-react ไว้ที่ Docker Hub https://hub.docker.com/
-กลับมาที่โปรแกรม VSCODE สร้าง Docker image ชื่อ arrukex/ct648_bun_react_docker:react-app จาก Dockerfile ในไดเรกทอรีปัจจุบัน และ push image ขึ้นไปยัง Docker Hub ด้วยคำสั่ง
+กลับมาที่โปรแกรม VSCODE สร้าง Docker image ชื่อ amorntheps/as2-react จาก Dockerfile ในไดเรกทอรีปัจจุบัน และ push image ขึ้นไปยัง Docker Hub ด้วยคำสั่ง
 
 ```
 docker push amorntheps/as2-react
